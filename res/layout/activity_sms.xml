@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="oodp.termproject3.SMSActivity" >
+
+    <ToggleButton
+        android:id="@+id/bt_sms_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:onClick="bt_sms_mode_Click"
+        android:text="ToggleButton"
+        android:textOff="Recv list"
+        android:textOn="Send list" />
+
+    <Button
+        android:id="@+id/bt_sms_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/bt_sms_mode"
+        android:onClick="bt_sms_new_Click"
+        android:text="New" />
+
+    <ListView
+        android:id="@+id/lv_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bt_sms_mode"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+    </ListView>
+
+    <ToggleButton
+        android:id="@+id/toggleButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_sms_new"
+        android:layout_alignBottom="@+id/bt_sms_new"
+        android:layout_toLeftOf="@+id/bt_sms_new"
+        android:onClick="bt_sms_mode_Click2"
+        android:text="ToggleButton"
+        android:textOff="Reply"
+        android:textOn="Delete" />
+
+</RelativeLayout>
